@@ -776,7 +776,7 @@ hr {
 
 .st-sticky-header {
   position: fixed;
-  z-index: 200;
+  z-index: 20;
   width: 100%;
   top: 0;
   left: 0;
@@ -3193,3 +3193,58 @@ st-hero-wrap {
   }
 }
 
+
+.corcinza {
+  color: #333333; /* Cinza escuro */
+}
+
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.8); /* Isso adiciona uma sobreposição escura para destacar o pop-up */
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.close-btn {
+  cursor: pointer;
+  color: #fff;
+  background-color: red;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  float: right;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 8px;
+}
+
+@media (min-width: 600px) {
+  .video-container {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .video-container iframe {
+      height: 400px;
+      width: 48%;
+  }
+}
